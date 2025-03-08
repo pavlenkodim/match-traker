@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -30,6 +28,8 @@
   --color-white-secondary: #b4b5b6;
   --color-white-disabled: #787878;
 
+  --color-additional: #101318;
+
   --radius-sm: 4px;
 
   --font-inter: "Inter", sans-serif;
@@ -42,6 +42,20 @@
   --text-2xl: 24px;
   --text-3xl: 32px;
   --text-4xl: 40px;
+
+  --animate-skeleton: skeleton 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-spin-reverse: spin-reverse 0.2s linear infinite;
+
+  @keyframes skeleton {
+    50% {
+      opacity: 0.5;
+    }
+  }
+  @keyframes spin-reverse {
+    to {
+      transform: rotate(-360deg);
+    }
+  }
 }
 
 @font-face {

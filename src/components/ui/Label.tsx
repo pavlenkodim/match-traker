@@ -1,26 +1,21 @@
 import cn from "../../utils/cn";
 
-interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "success" | "warning" | "secondary";
+interface LabelProps extends React.HTMLAttributes<HTMLButtonElement> {
+  variant?: "danger" | "success" | "warning";
   size?: "sm" | "md" | "lg";
-  disabled?: boolean;
 }
 
-const Button = ({
+const Label = ({
   children,
   className,
-  variant = "primary",
-  size = "md",
-  disabled,
-  onClick,
+  variant = "danger",
+  size = "sm",
   ...props
-}: ButtonProps) => {
+}: LabelProps) => {
   const variantClasses = {
-    primary:
-      "bg-primary text-white hover:bg-primary-hover disabled:bg-primary-disabled focus:outline-primary",
+    danger: "bg-primary text-white",
     success: "bg-success text-white",
     warning: "bg-warning text-white",
-    secondary: "bg-secondary text-white",
   };
 
   const sizeClasses = {
@@ -38,12 +33,10 @@ const Button = ({
         sizeClasses[size]
       )}
       {...props}
-      disabled={disabled}
-      onClick={onClick}
     >
       {children}
     </button>
   );
 };
 
-export default Button;
+export default Label;

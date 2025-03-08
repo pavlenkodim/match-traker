@@ -1,8 +1,10 @@
 import cn from "../../utils/cn";
 
-interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {}
-
-const Container = ({ children, className, ...props }: ContainerProps) => {
+const Container = ({
+  children,
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) => {
   return (
     <div
       className={cn("max-w-full mx-auto px-[42px]", className || "")}
