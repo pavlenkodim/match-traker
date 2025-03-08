@@ -36,8 +36,8 @@ const MatchCard = ({
   return (
     <div
       className={cn(
-        "w-full flex flex-col gap-[12px] bg-dark-secondary px-[36px] py-[16px] rounded-sm transition-colors duration-200",
-        !isOpen ? "hover:bg-additional cursor-pointer" : ""
+        "w-full flex flex-col gap-[12px] bg-dark-secondary px-[36px] py-[15px] rounded-sm transition-colors duration-200 ",
+        !isOpen ? "hover:bg-dark-additional cursor-pointer" : ""
       )}
       onClick={handleOpen}
     >
@@ -81,7 +81,7 @@ const MatchCard = ({
                 <Player key={player.id} {...player} />
               ))}
             </div>
-            <div className="grid grid-cols-3 gap-[12px] bg-additional min-h-[52px] rounded-sm px-[12px] py-[8px]">
+            <div className="grid grid-cols-3 gap-[12px] bg-dark-additional min-h-[52px] rounded-sm px-[12px] py-[8px]">
               <div className="flex items-center justify-center">
                 <span className="text-white-secondary opacity-40 mr-[8px]">
                   Points:
@@ -108,7 +108,7 @@ const MatchCard = ({
                 <Player key={player.id} {...player} />
               ))}
             </div>
-            <div className="grid grid-cols-3 gap-[12px] bg-additional min-h-[52px] rounded-sm px-[12px] py-[8px]">
+            <div className="grid grid-cols-3 gap-[12px] bg-dark-additional min-h-[52px] rounded-sm px-[12px] py-[8px]">
               <div className="flex items-center justify-center">
                 <span className="text-white-secondary opacity-40 mr-[8px]">
                   Points:

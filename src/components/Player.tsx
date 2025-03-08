@@ -2,7 +2,7 @@ import { Player as PlayerType } from "../interfaces/player";
 
 const Player = ({ username, kills }: PlayerType) => {
   return (
-    <div className="flex gap-[4px] justify-between items-center bg-additional rounded-sm px-[12px] py-[8px] w-full max-w-[286px] max-h-[52px]">
+    <div className="flex gap-[4px] justify-between items-center bg-dark-additional rounded-sm px-[12px] py-[8px] w-full max-w-[286px] max-h-[52px]">
       <div className="flex gap-[4px] items-center justify-between">
         <img
           src="/avatar-player.png"

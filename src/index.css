@@ -22,13 +22,17 @@
   --color-success: #43ad28;
   --color-warning: #eb6402;
   --color-dark: #06080c;
+  --color-dark-active: #11161d;
   --color-dark-secondary: #0b0e12;
+  --color-dark-additional: #101318;
+  --color-dark-secondary-additional: #171d25;
+  --color-dark-secondary-active: #0d1115;
+  --color-dark-secondary-disabled: #0f1318;
 
   --color-white: #fff;
   --color-white-secondary: #b4b5b6;
   --color-white-disabled: #787878;
-
-  --color-additional: #101318;
+  --color-white-disabled-secondary: #68696a;
 
   --radius-sm: 4px;
 
@@ -72,7 +76,7 @@
   font-weight: 100;
   font-style: normal;
   font-display: swap;
-  src: url("/fonts/Inter_18pt-Thin.ttf") format("truetype");
+  src: url("/fonts/Inter_24pt-Thin.ttf") format("truetype");
 }
 
 @font-face {
@@ -129,7 +133,7 @@
   font-weight: 900;
   font-style: normal;
   font-display: swap;
-  src: url("/fonts/Inter_18pt-Black.ttf") format("truetype");
+  src: url("/fonts/Inter_24pt-Black.ttf") format("truetype");
 }
 
 * {
